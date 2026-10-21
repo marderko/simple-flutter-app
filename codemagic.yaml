@@ -1,0 +1,11 @@
+workflows:
+  test:
+    name: Test
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: main
+          include: true
+    scripts:
+      - echo hi
